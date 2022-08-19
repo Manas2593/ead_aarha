@@ -11,6 +11,11 @@ a:hover {
     text-decoration: none;
 }
 
+#register_ead_lsm {
+    margin-left: 2vw;
+    /* font-size: 50px; */
+}
+
 /* Custom default button */
 
 .btn-default {
@@ -259,6 +264,13 @@ body {
     }
 }
 
+@media only screen and (max-width:768px) {
+    /* Register button */
+    #register_ead_lsm {
+        margin:0vw;
+    }
+}
+
 @media (min-width: 992px) {
     .masthead,
     .mastfoot,
@@ -271,7 +283,21 @@ body {
 /* EDITS 19-8-2022 */
 #register_ead_lsm{
     color: white;
+    /* margin-top: 5px; */
 }
 #register_ead_lsm:hover {
     background: none !important;
+}
+
+
+.inner.cover, #timer, #register_ead_lsm{
+    font-family: 'Poppins', sans-serif !important;
+    /* color: red !important; */
+}
+
+.nav i {
+    font-size: 25px;
+}
+.nav {
+    margin-top: 5px;
 }

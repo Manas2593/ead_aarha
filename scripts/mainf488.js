@@ -52,3 +52,27 @@ function countdown() {
 }
 
 
+// LOGO
+let statements = document.getElementsByClassName('text_logo');
+console.log(statements);
+// statements[0].style.diplay = "block";
+for (let i = 0; i < statements.length; i++) {
+    statements[i].style.display = "none";   
+}
+
+let j = 0;
+function changeWord() {
+    for (let i = 0; i < statements.length; i++) {
+        statements[i].style.display = "none";   
+    }
+    if (j < statements.length-1) {
+        statements[j].style.display = "block";
+        // statements[j+1].style.display = "block";
+    } else {
+        j = 0;
+        statements[j].style.display = "block";
+        // statements[j+1].style.display = "block";
+    }
+    j++;
+}
+setInterval(changeWord, 2000);
